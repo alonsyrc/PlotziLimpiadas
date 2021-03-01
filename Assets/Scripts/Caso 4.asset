@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281551d04f6768c4c9ede143543ead3f, type: 3}
+  m_Name: Caso 4
+  m_EditorClassIdentifier: 
+  trueVeredict: 0
+  NameOfVictim: Maria Smith
+  NameOfSuspect: Maron Jhones
+  CriminalOfRecord: Arson, Assault
+  BriefOfCharge: Assault
+  BriefOfDate: September 15
+  BriefOfFacts: The suspect gave a salp to a woman on a Wheelchair because an argue
+    over a guy named fernando
+  DialogoOfFijo: Is this real?
+  indexPregunta: 0
+  Questions:
+  - Who is this fernando guy?
+  - Did you have a problem with Maria?
+  - Did you slapped maria because she kissed fernando?
+  - Have you ever been with a psychologist?
+  - Tell me about the fire in your house
+  Answers:
+  - Fernando is the guy that i love
+  - Yes, she is a gold digger, she wants my fernando
+  - No, I don't like that hoe but i have dignity
+  - Yes, in my youth I was aggressive
+  - I set my house on fire because a spider
