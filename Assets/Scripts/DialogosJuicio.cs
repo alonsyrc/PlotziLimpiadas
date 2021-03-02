@@ -20,13 +20,18 @@ public class DialogosJuicio : ScriptableObject
     public Sprite spritePersonaje;
     SpriteRenderer spriteRenderer;
     Material material;
+    int pixelatedAmount;
 
     private void Awake()
     {
         spriteRenderer = GameObject.Find("SpritePersonaje").GetComponent<SpriteRenderer>();
-        material = spriteRenderer.GetComponent<Material>();
-        material.SetFloat("_PixelateSize", 24);
+        if (material == null)
+            material = spriteRenderer.material;
+    }
 
+    private void Start()
+    {
+        material.SetFloat("_PixelateSize", 20);
     }
     public string DialogoJuez()
     {
@@ -46,8 +51,17 @@ public class DialogosJuicio : ScriptableObject
         //fade spritte y eso
         spriteRenderer.sprite = spritePersonaje;
         if(material == null)
-            material = spriteRenderer.GetComponent<Material>();
-        material.SetFloat("_PixelateSize", 512);
+            material = spriteRenderer.material;
+        //DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512, 10f);
+
+            DialogosJuicio2.instance.StartCoroutine(StartAjam(material));
+    }
+
+    IEnumerator StartAjam(Material material)
+    {
+        pixelatedAmount++;
+        yield return new WaitForSeconds(1f);
+        material.SetFloat("_PixelateSize", pixelatedAmount);
     }
 
     public void PrintBrief()
