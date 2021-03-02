@@ -76,7 +76,7 @@
 		_NegativeAmount("Negative Amount", Range(0, 1)) = 1 //49
 
 		[Header(Looks bad with distorition effects)]
-		_PixelateSize("Pixelate size", Range(4,512)) = 32 //50
+		_PixelateSize("Pixelate size", Range (4,512)) = 32 //50
 
 		[Header(Texture does not support Tiling)]
 		_ColorRampTex("Color ramp Texture", 2D) = "white" {} //51
