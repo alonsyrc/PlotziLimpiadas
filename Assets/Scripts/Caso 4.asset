@@ -34,3 +34,4 @@ MonoBehaviour:
   - No, I don't like that hoe but i have dignity
   - Yes, in my youth I was aggressive
   - I set my house on fire because a spider
+  sprite: {fileID: 21300000, guid: cb745cca9d5db794b9516a0c0fdc579e, type: 3}

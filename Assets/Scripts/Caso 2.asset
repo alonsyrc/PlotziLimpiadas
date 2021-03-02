@@ -9,27 +9,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e000a6f32d5f04da5d3def97866a2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 281551d04f6768c4c9ede143543ead3f, type: 3}
   m_Name: Caso 2
   m_EditorClassIdentifier: 
   trueVeredict: 1
   NameOfVictim: John Peters 23 M, Bill Peters 17 M, Miranda Peters 20 F
   NameOfSuspect: Diego Santos 22 M
   CriminalOfRecord: Beer Stealing, Speeding
-  BriefOfCharge: first-degree murder and attempted murder
-  BriefOfDate: Feburary 15
+  BriefOfCharge: Feburary 15
+  BriefOfDate: First-degree murder and attempted murder
   BriefOfFacts: The suspect and the victim are close friends, the suspect goes at
     night to Jhon's house and started killing family members, Jhon survives also
     her sister Kim that he never realized what happened until the morning
   DialogoOfFijo: Hi your honor, my name is Diego Santos and I hope we can get this
     straight
+  indexPregunta: 0
   Questions:
   - Why you murdered your friends Family?
   - If you do not murderered them why you where there at the time of the murders
   - Why did you leave Jhon's left for dead?
   - Why did you leave Kim without a single scratch?
   - Why did you stay in the house after the murders?
-  - Why did not you call the police?
+  - Why did you not call the police?
   - Why Jhon would like to kill his family?
   - You consider yourself innocent?
   Answers:
@@ -39,7 +40,7 @@ MonoBehaviour:
     it once and I could not do it anymore. He kept hitting the guilt of killing their
     brothers, also told me to kill myself to leave no traces
   - Jhon you could tell the truth
-  - I stayed to care Jhon, she wanted to die after what he did to his brothers, I
+  - I stayed to care Jhon, he wanted to die after what he did to his brothers, I
     stayed with him in what could be his last hours
   - I don't know i was shoked with all that happened
   - Jhon was always an outcast even in his own family, he kind of hated his parents
@@ -47,3 +48,4 @@ MonoBehaviour:
     fingerprints and Jhon's are on the knife, Miranda and Mariah died stabbed by
     his hand, Jhon does not have any scratches besides of the hammer ones, which
     also have both Jhone and my finger tips
+  sprite: {fileID: 21300000, guid: d154d4999c347d4468e951425d0d6a4c, type: 3}

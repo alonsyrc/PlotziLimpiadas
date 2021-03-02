@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e000a6f32d5f04da5d3def97866a2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 281551d04f6768c4c9ede143543ead3f, type: 3}
   m_Name: Caso 3
   m_EditorClassIdentifier: 
   trueVeredict: 0
@@ -22,6 +22,7 @@ MonoBehaviour:
     suspect is friend of the victim, the suspect gave the victim tickets for a a
     basketballgame in the time window of the robbery
   DialogoOfFijo: I am not nervous at all
+  indexPregunta: 0
   Questions:
   - Can you explain why did you where in the area at the time of the incident
   - The house that was robbed had a broken window could you explain why your hand
@@ -46,3 +47,4 @@ MonoBehaviour:
   - I got lost
   - Yes he is my frind, I gave him tickets for the game becuse he loves that team
   - 'I bought it at a pawn shop a few days ago, besides '
+  sprite: {fileID: 21300000, guid: d154d4999c347d4468e951425d0d6a4c, type: 3}

@@ -16,6 +16,7 @@ public class DialogosJuicio : ScriptableObject
     public int indexPregunta;
     public List<string> Questions = new List<string>();
     public List<string> Answers = new List<string>();
+    public Sprite sprite;
 
     // Start is called before the first frame update
     void Start()
