@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 3e667de6da9622940b75a2db2c01deff
+guid: 0edd7f79e31fd4b4e84815dad98e59fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5974827448527447636
-    second: Assets Temporales_0
+      213: 2352696517832916979
+    second: Juzgado_0
   - first:
-      213: 1417875655133034669
-    second: Assets Temporales_1
+      213: -8335099592301269994
+    second: Juzgado_1
   - first:
-      213: -7460167723184106921
-    second: Assets Temporales_2
+      213: -4839101133189251933
+    second: Juzgado_2
   - first:
-      213: -107944779965747412
-    second: Assets Temporales_3
+      213: -1550478485815589064
+    second: Juzgado_3
   - first:
-      213: 1285624758267203870
-    second: Assets Temporales_4
+      213: -5216977962015723530
+    second: Juzgado_4
   - first:
-      213: -825249633551495674
-    second: Assets Temporales_5
+      213: -2775964977761902206
+    second: Juzgado_5
   - first:
-      213: 4399961364283047693
-    second: Assets Temporales_6
+      213: -7129643438158042106
+    second: Juzgado_6
   - first:
-      213: -4317574784071459650
-    second: Assets Temporales_7
+      213: 8945481891262967425
+    second: Juzgado_7
   - first:
-      213: 7327945876886419986
-    second: Assets Temporales_8
+      213: 5080965148691612917
+    second: Juzgado_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -68,7 +68,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Assets Temporales_0
+      name: Juzgado_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2231
+        y: 4032
         width: 896
-        height: 505
+        height: 504
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca994407716251da0800000000000000
-      internalID: -5974827448527447636
+      spriteID: 3ffbab1940576a020800000000000000
+      internalID: 2352696517832916979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets Temporales_1
+      name: Juzgado_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 1751
+        y: 3851
         width: 896
-        height: 461
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,41 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da8f0e7656e4da310800000000000000
-      internalID: 1417875655133034669
+      spriteID: 61c21610517c35c80800000000000000
+      internalID: -8335099592301269994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets Temporales_2
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 1546
-        width: 589
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 752d6ce3bf8287890800000000000000
-      internalID: -7460167723184106921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets Temporales_3
+      name: Juzgado_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 1347
-        width: 296
-        height: 183
+        y: 3216
+        width: 239
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2fa8c66bc0808ef0800000000000000
-      internalID: -107944779965747412
+      spriteID: 3ac7014782f08dcb0800000000000000
+      internalID: -4839101133189251933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets Temporales_4
+      name: Juzgado_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 967
-        width: 296
-        height: 267
+        y: 2520
+        width: 250
+        height: 403
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e11d6f6f7e477d110800000000000000
-      internalID: 1285624758267203870
+      spriteID: 837831d28089b7ae0800000000000000
+      internalID: -1550478485815589064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets Temporales_5
+      name: Juzgado_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 737
-        width: 183
-        height: 220
+        x: 656
+        y: 2199
+        width: 240
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,41 +224,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60e4425a4df1c84f0800000000000000
-      internalID: -825249633551495674
+      spriteID: 6ffe20d2f229997b0800000000000000
+      internalID: -5216977962015723530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets Temporales_6
+      name: Juzgado_5
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1512
+        width: 251
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281a3977f8ac979d0800000000000000
+      internalID: -2775964977761902206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Juzgado_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 504
-        width: 224
-        height: 221
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0fb88f7c8dcf0d30800000000000000
-      internalID: 4399961364283047693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Assets Temporales_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 343
+        y: 1008
         width: 896
-        height: 151
+        height: 504
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebc9c300c94e414c0800000000000000
-      internalID: -4317574784071459650
+      spriteID: 60c2565411b6e0d90800000000000000
+      internalID: -7129643438158042106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Assets Temporales_8
+      name: Juzgado_7
       rect:
         serializedVersion: 2
-        x: 4
-        y: 9
-        width: 298
-        height: 328
+        x: 285
+        y: 635
+        width: 327
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +287,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21a7a1d23f712b560800000000000000
-      internalID: 7327945876886419986
+      spriteID: 18e2b69826cb42c70800000000000000
+      internalID: 8945481891262967425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Juzgado_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 896
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f447e3f1e6338640800000000000000
+      internalID: 5080965148691612917
       vertices: []
       indices: 
       edges: []
