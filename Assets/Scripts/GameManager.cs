@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         gameState = GameState.Started; 
         gameState = GameState.GetSuspect;
         var suspect = casosJuicio[suspectIndex];
+        suspect.pixelatedAmount = 20;
         suspect.LlegadaCorte();
 
     }
@@ -29,9 +30,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var suspect = casosJuicio[suspectIndex];
-
-        Debug.Log(suspect.pixelatedAmount.ToString());
 
     }
 }
