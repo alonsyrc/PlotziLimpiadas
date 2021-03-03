@@ -22,8 +22,10 @@ public class DialogosJuicio : ScriptableObject
     Material material;
     public int pixelatedAmountInicial;
     public int pixelatedAmount;
+    ReportUIFiller reportUIFiller;
     private void Awake()
     {
+        reportUIFiller = FindObjectOfType<ReportUIFiller>();
         spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
         if (material == null)
             material = spriteRenderer.material;
@@ -39,12 +41,15 @@ public class DialogosJuicio : ScriptableObject
         return "Algo que decir?";
     }
 
-    public void LlegadaCorte()
+    public void LlegadaCorte( )
     {
         AnimarLlegada();
-        DialogoJuez();
-        PrimerDialogo();
-        PrintBrief();
+        //DialogoJuez();
+        //PrimerDialogo();
+        if(reportUIFiller == null)
+            reportUIFiller = FindObjectOfType<ReportUIFiller>();
+        reportUIFiller.ShowBrief(this);
+        //PrintBrief();
     }
 
     public void AnimarLlegada()

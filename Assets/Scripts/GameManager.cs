@@ -9,10 +9,12 @@ public class GameManager : MonoBehaviour
     public GameState gameState;
     public DialogosJuicio[] casosJuicio;
     DialogosJuicio dialogosJuicio;
+    ReportUIFiller reportUIFiller;
     // Start is called before the first frame update
 
     private void Awake()
     {
+
         casosJuicio = (DialogosJuicio[])Resources.FindObjectsOfTypeAll(typeof(DialogosJuicio));
         if(casosJuicio.Length>0)
             suspectIndex = Random.Range(0, casosJuicio.Length);

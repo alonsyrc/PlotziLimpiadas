@@ -27,12 +27,11 @@ public class ReportUIFiller : MonoBehaviour
 
     public void FillBrief(DialogosJuicio CaseReport)
     {
-        briefName.text = CaseReport.name;
-        briefRecord.text = CaseReport.CriminalOfRecord;
-        briefVictim.text = CaseReport.NameOfVictim;
-        briefDate.text = CaseReport.BriefOfDate;
-        briefFacts.text = CaseReport.BriefOfFacts;
-
+        briefName.text =   "<b>•Suspect: </b>" + CaseReport.NameOfSuspect;
+        briefRecord.text = "<b>•Criminal Record: </b>" + CaseReport.CriminalOfRecord;
+        briefVictim.text = "<b>•Victim: </b>" + CaseReport.NameOfVictim;
+        briefDate.text =   "<b>•Date: </b>" + CaseReport.BriefOfDate;
+        briefFacts.text =  "<b>•Facts: </b>" + CaseReport.BriefOfFacts;
         photograph.sprite = CaseReport.spritePersonaje;
     }
 }
