@@ -48,3 +48,5 @@ MonoBehaviour:
   - Yes he is my frind, I gave him tickets for the game becuse he loves that team
   - 'I bought it at a pawn shop a few days ago, besides '
   spritePersonaje: {fileID: 21300000, guid: d154d4999c347d4468e951425d0d6a4c, type: 3}
+  pixelatedAmountInicial: 20
+  pixelatedAmount: 20

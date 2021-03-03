@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var suspect = casosJuicio[suspectIndex];
+
+        Debug.Log(suspect.pixelatedAmount.ToString());
+
     }
 }
