@@ -20,11 +20,11 @@ public class DialogosJuicio : ScriptableObject
     public Sprite spritePersonaje;
     SpriteRenderer spriteRenderer;
     Material material;
-    int pixelatedAmount;
-
+    public int pixelatedAmountInicial;
+    public int pixelatedAmount;
     private void Awake()
     {
-        spriteRenderer = GameObject.Find("SpritePersonaje").GetComponent<SpriteRenderer>();
+        spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
         if (material == null)
             material = spriteRenderer.material;
     }
@@ -32,6 +32,7 @@ public class DialogosJuicio : ScriptableObject
     private void Start()
     {
         material.SetFloat("_PixelateSize", 20);
+        pixelatedAmount = pixelatedAmountInicial;
     }
     public string DialogoJuez()
     {
@@ -49,18 +50,29 @@ public class DialogosJuicio : ScriptableObject
     public void AnimarLlegada()
     {
         //fade spritte y eso
+        if(spriteRenderer == null)
+            spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = spritePersonaje;
         if(material == null)
             material = spriteRenderer.material;
-        //DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512, 10f);
 
-            DialogosJuicio2.instance.StartCoroutine(StartAjam(material));
+        DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512 , 2);
+
+        //pixelatedAmountInicial = DOTween.To(() => pixelatedAmountInicial, x => pixelatedAmountInicial = x,512, 10f);
+        //material.SetFloat("_PixelateSize", pixelatedAmount);        
+       DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
     }
 
-    IEnumerator StartAjam(Material material)
+    IEnumerator CorrutineAjam (Material material, float amount)
     {
-        pixelatedAmount++;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.1f);
+        material.SetFloat("_PixelateSize", amount);
+        if(amount < 512)
+            DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
+    }
+
+    void Update()
+    {
         material.SetFloat("_PixelateSize", pixelatedAmount);
     }
 

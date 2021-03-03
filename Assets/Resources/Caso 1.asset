@@ -46,3 +46,5 @@ MonoBehaviour:
   - I instaled internet on that house
   - 2 Weeks...
   spritePersonaje: {fileID: 21300000, guid: d154d4999c347d4468e951425d0d6a4c, type: 3}
+  pixelatedAmountInicial: 20
+  pixelatedAmount: 20
