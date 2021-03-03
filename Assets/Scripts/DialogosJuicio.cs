@@ -23,8 +23,13 @@ public class DialogosJuicio : ScriptableObject
     public int pixelatedAmountInicial;
     public int pixelatedAmount;
     ReportUIFiller reportUIFiller;
+    GameManager gameManager;
+    Animator animator;
+    int animationStateParameter;
+
     private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
         reportUIFiller = FindObjectOfType<ReportUIFiller>();
         spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
         if (material == null)
@@ -43,28 +48,51 @@ public class DialogosJuicio : ScriptableObject
 
     public void LlegadaCorte( )
     {
+        FadeOut();
         AnimarLlegada();
-        //DialogoJuez();
-        //PrimerDialogo();
+        DialogoJuez();
+        PrimerDialogo();
+
         if(reportUIFiller == null)
             reportUIFiller = FindObjectOfType<ReportUIFiller>();
         reportUIFiller.ShowBrief(this);
-        //PrintBrief();
+
+        if (gameManager == null)
+            gameManager = FindObjectOfType<GameManager>();
+        gameManager.MoveBriefIn();
+    }
+
+    public void FadeOut()
+    {
+        DialogosJuicio2.instance.StartCoroutine(AnimFade(20, 21));
+    }
+    public void FadeIn()
+    {
+        DialogosJuicio2.instance.StartCoroutine(AnimFade(10, 11));
+    }
+
+    IEnumerator AnimFade(int primero, int segundo)
+    {
+        if (animator == null)
+        {
+            animationStateParameter = Animator.StringToHash("AnimState");
+            animator = GameObject.Find("Canvas").GetComponent<Animator>();
+        }
+
+        animator.SetInteger(animationStateParameter, primero);
+        yield return new WaitForSeconds(1f);
+        animator.SetInteger(animationStateParameter, segundo);
     }
 
     public void AnimarLlegada()
     {
-        //fade spritte y eso
-        if(spriteRenderer == null)
-            spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = spritePersonaje;
-        if(material == null)
-            material = spriteRenderer.material;
+       if(spriteRenderer == null)
+          spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
+       spriteRenderer.sprite = spritePersonaje;
+       if(material == null)
+          material = spriteRenderer.material;
 
-        DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512 , 2);
-
-        //pixelatedAmountInicial = DOTween.To(() => pixelatedAmountInicial, x => pixelatedAmountInicial = x,512, 10f);
-        //material.SetFloat("_PixelateSize", pixelatedAmount);        
+       DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512 , 2);   
        DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
     }
 
@@ -81,14 +109,8 @@ public class DialogosJuicio : ScriptableObject
         material.SetFloat("_PixelateSize", pixelatedAmount);
     }
 
-    public void PrintBrief()
-    {
-        //obtener brief y printearlo en la wea
-    }
-
     public void SalidaCorte()
     {
-        // fade screen y volver a llmar a 
         AnimarLlegada();
     }
     public string PrimerDialogo()
