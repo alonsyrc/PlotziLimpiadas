@@ -1,67 +1,22 @@
 fileFormatVersion: 2
-guid: f27f5f16640017a4fb6385fe16f705bd
+guid: a038a21830563c544a77089d790ba711
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -198938125430884413
-    second: Menu_0
+      213: -3944064959573962877
+    second: martillo_y_podio_completo_0
   - first:
-      213: -1909268238846872576
-    second: Menu_1
+      213: -6117485860357087194
+    second: martillo_y_podio_completo_1
   - first:
-      213: -275939537401066862
-    second: Menu_2
+      213: -5017880191175787918
+    second: martillo_y_podio_completo_2
   - first:
-      213: 2406227903653740696
-    second: Menu_3
+      213: 7574501977357114342
+    second: martillo_y_podio_completo_3
   - first:
-      213: -894268473198475317
-    second: Menu_4
-  - first:
-      213: 7585431397144717044
-    second: Menu_5
-  - first:
-      213: -2067535388042838268
-    second: Menu_6
-  - first:
-      213: 1241894451957635108
-    second: Menu_7
-  - first:
-      213: 4708945720312227554
-    second: Menu_8
-  - first:
-      213: -6401181650942206485
-    second: Menu_9
-  - first:
-      213: 4651023577581015936
-    second: Menu_10
-  - first:
-      213: 6794328290157741187
-    second: Menu_11
-  - first:
-      213: 6707360251793479103
-    second: Menu_12
-  - first:
-      213: 8314267095552645065
-    second: Menu_13
-  - first:
-      213: -562920026388182652
-    second: Menu_14
-  - first:
-      213: 95148611192760218
-    second: Menu_15
-  - first:
-      213: 3987795459132994187
-    second: Menu_6
-  - first:
-      213: -6714282009335252302
-    second: Menu_10
-  - first:
-      213: -4360219174662810975
-    second: Menu_14
-  - first:
-      213: -8576446251591955589
-    second: Menu_16
+      213: 3716913577371420639
+    second: martillo_y_podio_completo_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -159,148 +114,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu_0
+      name: martillo_y_podio_completo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2520
-        width: 896
-        height: 504
+        x: 89
+        y: 126
+        width: 62
+        height: 118
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7f86534da3d3df0800000000000000
-      internalID: -198938125430884413
+      spriteID: 38f4789d0ddd349c0800000000000000
+      internalID: -3944064959573962877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_1
+      name: martillo_y_podio_completo_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1634
-        width: 271
-        height: 96
+        x: 203
+        y: 126
+        width: 63
+        height: 123
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004b89a07aae085e0800000000000000
-      internalID: -1909268238846872576
+      spriteID: 620e0f695035a1ba0800000000000000
+      internalID: -6117485860357087194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_2
+      name: martillo_y_podio_completo_2
       rect:
         serializedVersion: 2
-        x: 923
-        y: 1635
-        width: 271
-        height: 96
+        x: 300
+        y: 146
+        width: 82
+        height: 131
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29a49b5e37aab2cf0800000000000000
-      internalID: -275939537401066862
+      spriteID: 27a7f7f4d88ec5ab0800000000000000
+      internalID: -5017880191175787918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_3
+      name: martillo_y_podio_completo_3
       rect:
         serializedVersion: 2
-        x: 57
-        y: 1532
-        width: 179
-        height: 76
+        x: 23
+        y: 27
+        width: 99
+        height: 71
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8900ae59783a46120800000000000000
-      internalID: 2406227903653740696
+      spriteID: 6eb5ddeba690e1960800000000000000
+      internalID: 7574501977357114342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Menu_4
+      name: martillo_y_podio_completo_4
       rect:
         serializedVersion: 2
-        x: 954
-        y: 1533
-        width: 179
-        height: 76
+        x: 238
+        y: 37
+        width: 99
+        height: 71
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc78c29cf8be693f0800000000000000
-      internalID: -894268473198475317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_5
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 182
-        width: 281
-        height: 147
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f6e7e69aadd44960800000000000000
-      internalID: 7585431397144717044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Menu_9
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 2303
-        width: 247
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bed57d0143f6a27a0800000000000000
-      internalID: -6401181650942206485
+      spriteID: fd7cc00a431259330800000000000000
+      internalID: 3716913577371420639
       vertices: []
       indices: 
       edges: []
