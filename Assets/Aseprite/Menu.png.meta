@@ -1,52 +1,67 @@
 fileFormatVersion: 2
-guid: 0726ef8752802e543801d4a1ec0d216c
+guid: f27f5f16640017a4fb6385fe16f705bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5942630015261473797
-    second: retrato_0
+      213: -198938125430884413
+    second: Menu_0
   - first:
-      213: -5094766675453775376
-    second: retrato_1
+      213: -1909268238846872576
+    second: Menu_1
   - first:
-      213: 2746360979104835318
-    second: retrato_2
+      213: -275939537401066862
+    second: Menu_2
   - first:
-      213: -7234459542610033445
-    second: retrato_3
+      213: 2406227903653740696
+    second: Menu_3
   - first:
-      213: -3135532320079282319
-    second: retrato_4
+      213: -894268473198475317
+    second: Menu_4
   - first:
-      213: 293978957251495715
-    second: retrato_0
+      213: 7585431397144717044
+    second: Menu_5
   - first:
-      213: 8492390013969582217
-    second: retrato_1
+      213: -2067535388042838268
+    second: Menu_6
   - first:
-      213: -3199241686232190940
-    second: retrato_2
+      213: 1241894451957635108
+    second: Menu_7
   - first:
-      213: -4858287451463355085
-    second: retrato_3
+      213: 4708945720312227554
+    second: Menu_8
   - first:
-      213: 2893966936263314749
-    second: retrato_4
+      213: -6401181650942206485
+    second: Menu_9
   - first:
-      213: 7695805657642041054
-    second: retrato_5
+      213: 4651023577581015936
+    second: Menu_10
   - first:
-      213: 8712958494720329500
-    second: retrato_6
+      213: 6794328290157741187
+    second: Menu_11
   - first:
-      213: -5354117885068960575
-    second: retrato_7
+      213: 6707360251793479103
+    second: Menu_12
   - first:
-      213: 823238331543551665
-    second: retrato_8
+      213: 8314267095552645065
+    second: Menu_13
   - first:
-      213: 2451811113742243143
-    second: retrato_9
+      213: -562920026388182652
+    second: Menu_14
+  - first:
+      213: 95148611192760218
+    second: Menu_15
+  - first:
+      213: 3987795459132994187
+    second: Menu_6
+  - first:
+      213: -6714282009335252302
+    second: Menu_10
+  - first:
+      213: -4360219174662810975
+    second: Menu_14
+  - first:
+      213: -8576446251591955589
+    second: Menu_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,13 +159,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: retrato_0
+      name: Menu_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1024
-        width: 256
-        height: 256
+        y: 1008
+        width: 896
+        height: 504
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3274a66dd4c641400800000000000000
-      internalID: 293978957251495715
+      spriteID: 3c7f86534da3d3df0800000000000000
+      internalID: -198938125430884413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: retrato_1
+      name: Menu_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 256
-        height: 256
+        x: 26
+        y: 626
+        width: 271
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9884bbc19b70bd570800000000000000
-      internalID: 8492390013969582217
+      spriteID: 004b89a07aae085e0800000000000000
+      internalID: -1909268238846872576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: retrato_2
+      name: Menu_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 922
+        y: 626
+        width: 271
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 420328df2a20a93d0800000000000000
-      internalID: -3199241686232190940
+      spriteID: 29a49b5e37aab2cf0800000000000000
+      internalID: -275939537401066862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: retrato_3
+      name: Menu_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 58
+        y: 525
+        width: 179
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 335f9ce9d45e39cb0800000000000000
-      internalID: -4858287451463355085
+      spriteID: 8900ae59783a46120800000000000000
+      internalID: 2406227903653740696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: retrato_4
+      name: Menu_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 954
+        y: 525
+        width: 179
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3d43bb789f692820800000000000000
-      internalID: 2893966936263314749
+      spriteID: bc78c29cf8be693f0800000000000000
+      internalID: -894268473198475317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: retrato_5
+      name: Menu_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 79
+        y: 131
+        width: 151
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edef134b87efcca60800000000000000
-      internalID: 7695805657642041054
+      spriteID: 4f6e7e69aadd44960800000000000000
+      internalID: 7585431397144717044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: retrato_6
+      name: Menu_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 76
+        y: 40
+        width: 155
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,71 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1707847695aae870800000000000000
-      internalID: 8712958494720329500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: retrato_7
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cc16ee962a52b5b0800000000000000
-      internalID: -5354117885068960575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: retrato_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1be732d96eabc6b00800000000000000
-      internalID: 823238331543551665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: retrato_9
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74516fab735960220800000000000000
-      internalID: 2451811113742243143
+      spriteID: bed57d0143f6a27a0800000000000000
+      internalID: -6401181650942206485
       vertices: []
       indices: 
       edges: []

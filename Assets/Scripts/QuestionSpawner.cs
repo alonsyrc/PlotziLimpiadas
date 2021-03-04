@@ -19,7 +19,6 @@ public class QuestionSpawner : MonoBehaviour
 
     public void SpawnQuestion(string question,DialogosJuicio CaseReport=null/*, QuestionSpawnning functionReturn*/)
     {
-        
         questionText.text = question;
         QuestionPop.GetComponentInChildren<Button>().onClick.AddListener(() => {
 

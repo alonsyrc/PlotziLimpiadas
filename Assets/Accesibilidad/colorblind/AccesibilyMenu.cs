@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AccesibilyMenu : MonoBehaviour
 {
     public TMPro.TMP_Dropdown filterMode;
+    public Toggle slowMode;
 
     public void ChangeFilter()
     {
@@ -20,5 +21,9 @@ public class AccesibilyMenu : MonoBehaviour
         }
     }
 
+    public void ChangeToggle()
+    {
+        AccesibilityModel.slowMode = slowMode.isOn;
+    }
 
 }
