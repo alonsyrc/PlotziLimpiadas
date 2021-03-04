@@ -24,12 +24,12 @@ public class DialogosJuicio : ScriptableObject
     public int pixelatedAmount;
     ReportUIFiller reportUIFiller;
     GameManager gameManager;
-    Animator animator;
-    int animationStateParameter;
+
 
     private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+            gameManager = FindObjectOfType<GameManager>();
         reportUIFiller = FindObjectOfType<ReportUIFiller>();
         spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
         if (material == null)
@@ -43,12 +43,11 @@ public class DialogosJuicio : ScriptableObject
     }
     public string DialogoJuez()
     {
-        return "Algo que decir?";
+        return "Anything to say?";
     }
 
     public void LlegadaCorte( )
     {
-        FadeOut();
         AnimarLlegada();
         DialogoJuez();
         PrimerDialogo();
@@ -60,28 +59,6 @@ public class DialogosJuicio : ScriptableObject
         if (gameManager == null)
             gameManager = FindObjectOfType<GameManager>();
         gameManager.MoveBriefIn();
-    }
-
-    public void FadeOut()
-    {
-        DialogosJuicio2.instance.StartCoroutine(AnimFade(20, 21));
-    }
-    public void FadeIn()
-    {
-        DialogosJuicio2.instance.StartCoroutine(AnimFade(10, 11));
-    }
-
-    IEnumerator AnimFade(int primero, int segundo)
-    {
-        if (animator == null)
-        {
-            animationStateParameter = Animator.StringToHash("AnimState");
-            animator = GameObject.Find("Canvas").GetComponent<Animator>();
-        }
-
-        animator.SetInteger(animationStateParameter, primero);
-        yield return new WaitForSeconds(1f);
-        animator.SetInteger(animationStateParameter, segundo);
     }
 
     public void AnimarLlegada()
@@ -104,13 +81,9 @@ public class DialogosJuicio : ScriptableObject
             DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
     }
 
-    void Update()
-    {
-        material.SetFloat("_PixelateSize", pixelatedAmount);
-    }
-
     public void SalidaCorte()
     {
+        gameManager.FadeIn();
         AnimarLlegada();
     }
     public string PrimerDialogo()

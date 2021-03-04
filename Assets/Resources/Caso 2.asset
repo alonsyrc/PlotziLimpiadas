@@ -48,6 +48,7 @@ MonoBehaviour:
     fingerprints and Jhon's are on the knife, Miranda and Mariah died stabbed by
     his hand, Jhon does not have any scratches besides of the hammer ones, which
     also have both Jhone and my finger tips
-  spritePersonaje: {fileID: 21300000, guid: cb745cca9d5db794b9516a0c0fdc579e, type: 3}
+  spritePersonaje: {fileID: -5942630015261473797, guid: 0726ef8752802e543801d4a1ec0d216c,
+    type: 3}
   pixelatedAmountInicial: 20
-  pixelatedAmount: 20
+  pixelatedAmount: 512
