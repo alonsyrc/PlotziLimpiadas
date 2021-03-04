@@ -10,17 +10,19 @@ public class GameManager : MonoBehaviour
     public enum GameState { None, Started, GetSuspect, Trial, Veredict }
     public GameState gameState;
     public DialogosJuicio[] casosJuicio;
-    DialogosJuicio suspect;
+    public DialogosJuicio suspect;
     ReportUIFiller reportUIFiller;
     RectTransform rectTransform;
     public List<int> casosAtendidosList = new List<int>();
     bool yaSeAtendio;
     Animator animator;
     int animationStateParameter;
-    // Start is called before the first frame update
+
+    public static GameManager instance;
 
     private void Awake()
     {
+        instance = this;
         rectTransform = GameObject.Find("Brief").GetComponent<RectTransform>();
         casosJuicio = (DialogosJuicio[])Resources.FindObjectsOfTypeAll(typeof(DialogosJuicio));
         rectTransform.DOMoveX(1000f, 0f);

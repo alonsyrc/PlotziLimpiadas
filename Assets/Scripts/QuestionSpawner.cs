@@ -21,8 +21,8 @@ public class QuestionSpawner : MonoBehaviour
     {
         questionText.text = question;
         QuestionPop.GetComponentInChildren<Button>().onClick.AddListener(() => {
-
-            QuestionAnswered.Invoke();
+            CaseReport.Responder();
+           // QuestionAnswered.Invoke();
             TweenOut();
         }
         ) ;

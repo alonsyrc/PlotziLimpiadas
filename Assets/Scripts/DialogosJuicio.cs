@@ -15,6 +15,7 @@ public class DialogosJuicio : ScriptableObject
     public string BriefOfFacts;
     public string DialogoOfFijo;
     public int indexPregunta;
+    public int sumQuestions;
     public List<string> Questions = new List<string>();
     public List<string> Answers = new List<string>();
     public Sprite spritePersonaje;
@@ -49,8 +50,8 @@ public class DialogosJuicio : ScriptableObject
     public void LlegadaCorte( )
     {
         AnimarLlegada();
-        DialogoJuez();
-        PrimerDialogo();
+        Transcript.instance.NewTranscriptLine(DialogoJuez());
+        Transcript.instance.NewTranscriptLine(PrimerDialogo());
 
         if(reportUIFiller == null)
             reportUIFiller = FindObjectOfType<ReportUIFiller>();
@@ -69,7 +70,10 @@ public class DialogosJuicio : ScriptableObject
        if(material == null)
           material = spriteRenderer.material;
 
-       DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512 , 2);   
+       DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512 , 2).OnComplete(()=> {
+           InspectSuspect.instance.ShowInspect();
+           InspectSuspect.instance.isOn = true ;
+       });   
        DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
     }
 
@@ -90,8 +94,25 @@ public class DialogosJuicio : ScriptableObject
     {
         return DialogoOfFijo;
     }
-    public void SaltoDialogo()
-    { 
-        
+
+    public void Responder()
+    {
+        sumQuestions++;
+        Transcript.instance.NewTranscriptLine(Answers[indexPregunta]);
+        if(sumQuestions<2){
+            InspectSuspect.instance.ShowInspect();
+            InspectSuspect.instance.isOn=true;
+        }
+        else
+        {
+            Debug.Log("TOMAR DECISION");
+            ///AQUI DEBE IR EL: TOMA UNA DECISION NO PUEDES PREGUNTAR MÁS
+        }
+    }
+    public void SaltoDialogo(int id)
+    {
+        indexPregunta = id;
+        Transcript.instance.NewTranscriptLine(Questions[id]);
+        FindObjectOfType<QuestionSpawner>().SpawnQuestion(Questions[id],this);
     }
 }

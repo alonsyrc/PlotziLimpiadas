@@ -5,20 +5,32 @@ using UnityEngine;
 public class InspectSuspect : MonoBehaviour
 {
     public FlyingObjects[] flyingObjects;
+    public bool isOn;
 
     public static InspectSuspect instance;
 
     private void Awake()
     {
         instance = this;
+        HideInspect();
     }
 
     public bool inspecting;
 
+    public void HideInspect()
+    {
+        transform.localScale = Vector3.zero;
+        isOn = false;
+    }
+    public void ShowInspect()
+    {
+        transform.localScale = Vector3.one * 2;
+    }
+
     private void OnMouseEnter()
     {
         //sacar a volar las partes, casha
-        if (!inspecting)
+        if (isOn)
         {
             inspecting = true;
             foreach (FlyingObjects item in flyingObjects)

@@ -7,6 +7,8 @@ public class FlyingObjects : MonoBehaviour
 {
     public float radious;
     public float timeToMove=3f;
+    public enum QuestionType { feeling,memory,talking}
+    public QuestionType questionType;
     Vector3 randDirection;
     Vector3 initPos;
 
@@ -27,6 +29,11 @@ public class FlyingObjects : MonoBehaviour
         randDirection.y = Random.Range(-radious, radious);
     }
 
+    void HideObjetc()
+    {
+        transform.localScale = Vector3.zero;
+    }
+
     [ContextMenu("Move")]
     public void MovePos()
     {
@@ -37,9 +44,27 @@ public class FlyingObjects : MonoBehaviour
         });
     }
 
+        int id;
     private void OnMouseDown()
     {
-        ///Llamar a la función que spawnea la pregunta
+        switch (questionType)
+        {
+            case QuestionType.feeling:
+                id = 0;
+                break;
+            case QuestionType.memory:
+                id = 1;
+                break;
+            case QuestionType.talking:
+                id = 2;
+                break;
+        }
+        //FindObjectOfType<DialogosJuicio>().SaltoDialogo(id);
+        GameManager.instance.suspect.SaltoDialogo(id);
+        InspectSuspect.instance.HideInspect();
+        RestartPosition();
+        HideObjetc();
+        ///Llamar a la función que llama la pregunta
         ///Esconder
         ///Restart
     }
