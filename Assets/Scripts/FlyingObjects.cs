@@ -13,19 +13,34 @@ public class FlyingObjects : MonoBehaviour
     private void Start()
     {
         initPos = transform.position;
-        randDirection.x = Random.Range(-radious,radious);
-        randDirection.y = Random.Range(-radious,radious);
+        Randomize();
+
     }
 
     public void RestartPosition()
     {
         transform.position = initPos;
     }
+     void Randomize()
+    {
+        randDirection.x = Random.Range(-radious, radious);
+        randDirection.y = Random.Range(-radious, radious);
+    }
 
+    [ContextMenu("Move")]
     public void MovePos()
     {
-        transform.DOMove(randDirection,timeToMove).OnComplete(()=>{
+        if (AccesibilityModel.slowMode) timeToMove *= 3;
+        transform.DOMove(randDirection,timeToMove).SetEase(Ease.Linear).OnComplete(()=>{
+            Randomize();
             MovePos();    
         });
+    }
+
+    private void OnMouseDown()
+    {
+        ///Llamar a la función que spawnea la pregunta
+        ///Esconder
+        ///Restart
     }
 }

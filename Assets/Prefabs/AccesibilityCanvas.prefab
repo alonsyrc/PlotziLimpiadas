@@ -358,7 +358,6 @@ GameObject:
   - component: {fileID: 4449032801163984544}
   - component: {fileID: 4449032801163984545}
   - component: {fileID: 4449032801163984548}
-  - component: {fileID: 4449032801163984549}
   - component: {fileID: 2492505381910324525}
   m_Layer: 5
   m_Name: AccesibilityCanvas
@@ -461,23 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filterMode: {fileID: 4449032801254978678}
---- !u!114 &4449032801163984549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4449032801163984558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 9ffa17da57a92da49bceefefa9264bb9, type: 2}
+  slowMode: {fileID: 4449032801760190700}
 --- !u!114 &2492505381910324525
 MonoBehaviour:
   m_ObjectHideFlags: 0
