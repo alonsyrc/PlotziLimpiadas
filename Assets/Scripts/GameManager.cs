@@ -2,34 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
     public int suspectIndex;
-    public enum GameState { Started, GetSuspect, Trial, Veredict }
+    public enum GameState { None, Started, GetSuspect, Trial, Veredict }
     public GameState gameState;
     public DialogosJuicio[] casosJuicio;
-    DialogosJuicio dialogosJuicio;
+    DialogosJuicio suspect;
     ReportUIFiller reportUIFiller;
     RectTransform rectTransform;
+    public List<int> casosAtendidosList = new List<int>();
+    bool yaSeAtendio;
+    Animator animator;
+    int animationStateParameter;
     // Start is called before the first frame update
 
     private void Awake()
     {
         rectTransform = GameObject.Find("Brief").GetComponent<RectTransform>();
         casosJuicio = (DialogosJuicio[])Resources.FindObjectsOfTypeAll(typeof(DialogosJuicio));
-        if(casosJuicio.Length>0)
-            suspectIndex = Random.Range(0, casosJuicio.Length);
-
         rectTransform.DOMoveX(1000f, 0f);
     }
     void Start()
+    { 
+        StartCase();
+    }
+
+    void StartCase()
     {
-        gameState = GameState.Started; 
-        gameState = GameState.GetSuspect;
-        var suspect = casosJuicio[suspectIndex];
-        suspect.pixelatedAmount = 20;
-        suspect.LlegadaCorte();
+        if (casosJuicio.Length > 0)
+        {
+            gameState = GameState.Started;
+            suspectIndex = Random.Range(0, casosJuicio.Length);
+            yaSeAtendio = casosAtendidosList.Any(item => item == suspectIndex);
+            if (!yaSeAtendio)
+            {
+                casosAtendidosList.Add(suspectIndex);
+                gameState = GameState.GetSuspect;
+                suspect = casosJuicio[suspectIndex];
+                suspect.pixelatedAmount = 20;
+                FadeOut();
+                suspect.LlegadaCorte();
+                gameState = GameState.Trial;
+            }
+            else
+            {
+                StartCase();
+            }
+        }
+        else
+        {
+            StartCase();
+        }
     }
 
     public void MoveBriefIn()
@@ -43,8 +69,49 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void ChangeCase()
     {
+        gameState = GameState.Started;
+        StartCase();
+    }
 
+    public void FadeOut()
+    {
+        DialogosJuicio2.instance.StartCoroutine(AnimFade(20, 21));
+    }
+    public void FadeIn()
+    {
+        DialogosJuicio2.instance.StartCoroutine(AnimFade(10, 11));
+    }
+
+    IEnumerator AnimFade(int primero, int segundo)
+    {
+        if (animator == null)
+        {
+            animationStateParameter = Animator.StringToHash("AnimState");
+            animator = GameObject.Find("Canvas").GetComponent<Animator>();
+        }
+        animator.SetInteger(animationStateParameter, primero);
+        yield return new WaitForSeconds(1f);
+        animator.SetInteger(animationStateParameter, segundo);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.N) && casosAtendidosList.Count < 4)
+        {
+            StartCoroutine(ChangeSuspect(suspect));
+        }
+        else
+        {
+            //Periodico
+        }
+    }
+
+    IEnumerator ChangeSuspect(DialogosJuicio suspect)
+    {
+        suspect.SalidaCorte();
+        yield return new WaitForSeconds(1f);
+        StartCase();
     }
 }
