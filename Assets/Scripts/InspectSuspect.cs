@@ -25,6 +25,11 @@ public class InspectSuspect : MonoBehaviour
     public void ShowInspect()
     {
         transform.localScale = Vector3.one * 2;
+
+        foreach (FlyingObjects item in flyingObjects)
+        {
+            item.transform.localScale = Vector3.one * 0.1f;
+        }
     }
 
     private void OnMouseEnter()

@@ -23,6 +23,12 @@ public class ReportUIFiller : MonoBehaviour
     public void CloseBrief()
     {
         //Tweening off
+        briefName.text = "";
+        briefRecord.text = "";
+        briefVictim.text = "";
+        briefDate.text = "";
+        briefFacts.text = "";
+        photograph.sprite = null;
     }
 
     public void FillBrief(DialogosJuicio CaseReport)

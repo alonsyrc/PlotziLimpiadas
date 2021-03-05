@@ -23,7 +23,7 @@ MonoBehaviour:
     basketballgame in the time window of the robbery
   DialogoOfFijo: I am not nervous at all
   indexPregunta: 0
-  sumQuestions: 0
+  sumQuestions: 2
   Questions:
   - The house that was robbed had a broken window could you explain why your hand
     is hurt?
@@ -34,7 +34,7 @@ MonoBehaviour:
   - I cutted with a stop sign
   - Emmm no, I ammm found it laying arround in a garden
   - Yes he is my frind, I gave him tickets for the game becuse he loves that team
-  spritePersonaje: {fileID: -7234459542610033445, guid: 0726ef8752802e543801d4a1ec0d216c,
+  spritePersonaje: {fileID: -3135532320079282319, guid: 0726ef8752802e543801d4a1ec0d216c,
     type: 3}
   pixelatedAmountInicial: 20
   pixelatedAmount: 512

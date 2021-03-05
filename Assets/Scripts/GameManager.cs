@@ -86,6 +86,8 @@ public class GameManager : MonoBehaviour
         DialogosJuicio2.instance.StartCoroutine(AnimFade(10, 11));
     }
 
+
+
     IEnumerator AnimFade(int primero, int segundo)
     {
         if (animator == null)
@@ -98,7 +100,7 @@ public class GameManager : MonoBehaviour
         animator.SetInteger(animationStateParameter, segundo);
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.N) && casosAtendidosList.Count < 4)
         {
@@ -108,16 +110,25 @@ public class GameManager : MonoBehaviour
         {
             //Periodico
         }
-    }
+    }*/
 
     public void EndTrial()
     {
-        StartCoroutine(ChangeSuspect(suspect));
-        foreach (FlyingObjects item in FindObjectsOfType<FlyingObjects>())
+        if (casosAtendidosList.Count < 4)
         {
-            item.ShowFlyingObjects();
+            StartCoroutine(ChangeSuspect(suspect));
+            foreach (FlyingObjects item in FindObjectsOfType<FlyingObjects>())
+            {
+                item.ShowFlyingObjects();
+            }
+            Transcript.instance.DestroyAllChildren();
         }
-        Transcript.instance.DestroyAllChildren();
+        else
+        {
+            //Periodico
+            Debug.Log("Periodico");
+            suspect.Periodico();
+        }
     }
 
     IEnumerator ChangeSuspect(DialogosJuicio suspect)
