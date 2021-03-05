@@ -59,7 +59,7 @@ public class DialogosJuicio : ScriptableObject
 
         if (gameManager == null)
             gameManager = FindObjectOfType<GameManager>();
-        gameManager.MoveBriefIn();
+        //gameManager.MoveBriefIn();
     }
 
     public void AnimarLlegada()

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public DialogosJuicio[] casosJuicio;
     public DialogosJuicio suspect;
     ReportUIFiller reportUIFiller;
-    RectTransform rectTransform;
+    //RectTransform rectTransform;
     public List<int> casosAtendidosList = new List<int>();
     bool yaSeAtendio;
     Animator animator;
@@ -23,9 +23,9 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        rectTransform = GameObject.Find("Brief").GetComponent<RectTransform>();
+        //rectTransform = GameObject.Find("Brief").GetComponent<RectTransform>();
         casosJuicio = (DialogosJuicio[])Resources.FindObjectsOfTypeAll(typeof(DialogosJuicio));
-        rectTransform.DOMoveX(1000f, 0f);
+        //rectTransform.DOMoveX(1000f, 0f);
     }
     void Start()
     { 
@@ -60,15 +60,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void MoveBriefIn()
+    /*public void MoveBriefIn()
     {
         rectTransform.DOLocalMoveX(450f, 1f, true);
-    }
+    }*/
 
-    public void MoveBriefOut()
+    /*public void MoveBriefOut()
     {
         rectTransform.DOLocalMoveX(1000f, 1f, true);
-    }
+    }*/
 
     // Update is called once per frame
     public void ChangeCase()
