@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class SopitafyUI : MonoBehaviour
 {
     TextMeshProUGUI txtVolumenPrc;
-    public Slider sliderVolumen;
+    public Slider sliderVolumen; 
+    Sopitafy sopitafy;
+
     float volPrc;
 
     // Start is called before the first frame update
@@ -16,7 +18,7 @@ public class SopitafyUI : MonoBehaviour
         txtVolumenPrc = GameObject.Find("txtVolumenPrc").GetComponent<TextMeshProUGUI>();
         sliderVolumen = GetComponent<Slider>();
         sliderVolumen.onValueChanged.AddListener(delegate { ChangeVolumen(sliderVolumen.value); });
-        //sopitafy = FindObjectOfType<Sopitafy>();
+        sopitafy = FindObjectOfType<Sopitafy>();
         sliderVolumen.value = 1.0f;
     }
 
@@ -24,7 +26,7 @@ public class SopitafyUI : MonoBehaviour
     
     public void ChangeVolumen(float vol)
     {
-        //sopitafy.ChangeVolume(vol);
+        sopitafy.ChangeVolume(vol);
         volPrc = vol * 100;
         txtVolumenPrc.text = ($"{Mathf.Round(volPrc).ToString()} %");
     }
