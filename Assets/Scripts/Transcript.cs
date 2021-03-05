@@ -18,4 +18,12 @@ public class Transcript : MonoBehaviour
         TextMeshProUGUI newDalog = Instantiate(dialogueLine,transform).GetComponent<TextMeshProUGUI>();
         newDalog.text = dialogue;
     }
+
+    public void DestroyAllChildren()
+    {
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 }

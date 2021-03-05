@@ -7,25 +7,33 @@ public class PlateVeredict : MonoBehaviour
     public enum VeredictType {NotGuilty,Guilty}
     public VeredictType veredictType;
 
-    private void OnMouseDown()
+    bool isInside;
+
+    private void OnMouseEnter()
     {
-        if (FindObjectOfType<VeredictHammer>().isDrag)
-        {
-            GiveVeredict();
-            //sonida tac tac
-        }
+        isInside = true;
     }
+
+    //private void OnMouseDown()
+    //{
+    //    if (FindObjectOfType<VeredictHammer>().isInside && isInside)
+    //    {
+    //        GiveVeredict();
+    //        //sonida tac tac
+    //    }
+    //}
 
     public void GiveVeredict()
     {
         switch (veredictType)
         {
             case VeredictType.Guilty:
-
+                Debug.Log("Culpable");
                 break;
             case VeredictType.NotGuilty:
-
+                Debug.Log("Inocente");
                 break;
         }
+        GameManager.instance.EndTrial();
     }
 }

@@ -110,6 +110,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void EndTrial()
+    {
+        StartCoroutine(ChangeSuspect(suspect));
+        foreach (FlyingObjects item in FindObjectsOfType<FlyingObjects>())
+        {
+            item.ShowFlyingObjects();
+        }
+        Transcript.instance.DestroyAllChildren();
+    }
+
     IEnumerator ChangeSuspect(DialogosJuicio suspect)
     {
         suspect.SalidaCorte();

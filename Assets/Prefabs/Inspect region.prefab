@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radious: 4
   timeToMove: 2
+  questionType: 1
 --- !u!1 &1686492982
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radious: 4
   timeToMove: 2
+  questionType: 0
 --- !u!1 &1877387484
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radious: 4
   timeToMove: 2
+  questionType: 2
 --- !u!1 &3508109613375214017
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,4 +449,5 @@ MonoBehaviour:
   - {fileID: 763537866}
   - {fileID: 1686492983}
   - {fileID: 1877387485}
+  isOn: 0
   inspecting: 0

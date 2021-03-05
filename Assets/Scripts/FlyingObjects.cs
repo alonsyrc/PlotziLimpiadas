@@ -6,11 +6,12 @@ using DG.Tweening;
 public class FlyingObjects : MonoBehaviour
 {
     public float radious;
-    public float timeToMove=3f;
+    public float timeToMove=1f;
     public enum QuestionType { feeling,memory,talking}
     public QuestionType questionType;
     Vector3 randDirection;
     Vector3 initPos;
+    bool locked;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class FlyingObjects : MonoBehaviour
     public void RestartPosition()
     {
         transform.position = initPos;
+        locked = false;
     }
      void Randomize()
     {
@@ -32,6 +34,11 @@ public class FlyingObjects : MonoBehaviour
     void HideObjetc()
     {
         transform.localScale = Vector3.zero;
+    }
+
+     public void ShowFlyingObjects()
+    {
+        transform.localScale = Vector3.one;
     }
 
     [ContextMenu("Move")]
@@ -47,23 +54,26 @@ public class FlyingObjects : MonoBehaviour
         int id;
     private void OnMouseDown()
     {
-        switch (questionType)
+        if (!locked)
         {
-            case QuestionType.feeling:
-                id = 0;
-                break;
-            case QuestionType.memory:
-                id = 1;
-                break;
-            case QuestionType.talking:
-                id = 2;
-                break;
+            locked = true;
+            switch (questionType)
+            {
+                case QuestionType.feeling:
+                    id = 0;
+                    break;
+                case QuestionType.memory:
+                    id = 1;
+                    break;
+                case QuestionType.talking:
+                    id = 2;
+                    break;
+            }
+            GameManager.instance.suspect.SaltoDialogo(id);
+            InspectSuspect.instance.HideInspect();
+            RestartPosition();
+            HideObjetc();
         }
-        //FindObjectOfType<DialogosJuicio>().SaltoDialogo(id);
-        GameManager.instance.suspect.SaltoDialogo(id);
-        InspectSuspect.instance.HideInspect();
-        RestartPosition();
-        HideObjetc();
         ///Llamar a la función que llama la pregunta
         ///Esconder
         ///Restart

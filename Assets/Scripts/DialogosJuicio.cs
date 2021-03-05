@@ -49,6 +49,7 @@ public class DialogosJuicio : ScriptableObject
 
     public void LlegadaCorte( )
     {
+        sumQuestions = 0;
         AnimarLlegada();
         Transcript.instance.NewTranscriptLine(DialogoJuez());
         Transcript.instance.NewTranscriptLine(PrimerDialogo());
@@ -100,6 +101,7 @@ public class DialogosJuicio : ScriptableObject
     public void Responder()
     {
         sumQuestions++;
+        Transcript.instance.NewTranscriptLine(Questions[indexPregunta]);
         Transcript.instance.NewTranscriptLine(Answers[indexPregunta]);
         if(sumQuestions<2){
             InspectSuspect.instance.ShowInspect();
@@ -114,7 +116,6 @@ public class DialogosJuicio : ScriptableObject
     public void SaltoDialogo(int id)
     {
         indexPregunta = id;
-        Transcript.instance.NewTranscriptLine(Questions[id]);
         FindObjectOfType<QuestionSpawner>().SpawnQuestion(Questions[id],this);
     }
 }

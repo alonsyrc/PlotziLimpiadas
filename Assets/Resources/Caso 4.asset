@@ -22,7 +22,7 @@ MonoBehaviour:
     over a guy named fernando
   DialogoOfFijo: Is this real?
   indexPregunta: 0
-  sumQuestions: 6
+  sumQuestions: 0
   Questions:
   - Who is this fernando guy?
   - Did you have a problem with Maria?

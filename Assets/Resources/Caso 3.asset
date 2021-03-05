@@ -23,7 +23,7 @@ MonoBehaviour:
     basketballgame in the time window of the robbery
   DialogoOfFijo: I am not nervous at all
   indexPregunta: 0
-  sumQuestions: 7
+  sumQuestions: 0
   Questions:
   - The house that was robbed had a broken window could you explain why your hand
     is hurt?

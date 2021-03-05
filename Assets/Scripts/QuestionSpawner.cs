@@ -17,11 +17,17 @@ public class QuestionSpawner : MonoBehaviour
     public GameObject QuestionPop;
     public TMPro.TextMeshProUGUI questionText;
 
+    private void Start()
+    {
+        TweenOut();
+    }
+
     public void SpawnQuestion(string question,DialogosJuicio CaseReport=null/*, QuestionSpawnning functionReturn*/)
     {
         questionText.text = question;
         QuestionPop.GetComponentInChildren<Button>().onClick.AddListener(() => {
             CaseReport.Responder();
+            QuestionPop.GetComponentInChildren<Button>().onClick.RemoveAllListeners();
            // QuestionAnswered.Invoke();
             TweenOut();
         }
@@ -31,11 +37,12 @@ public class QuestionSpawner : MonoBehaviour
 
     void TweenIN()
     {
-
+        transform.localScale = Vector3.one;
     }
 
     void TweenOut()
     {
-
+        transform.localScale = Vector3.zero;
+        questionText.text = "";
     }
 }

@@ -24,7 +24,7 @@ MonoBehaviour:
   DialogoOfFijo: Hi your honor, my name is Diego Santos and I hope we can get this
     straight
   indexPregunta: 0
-  sumQuestions: 11
+  sumQuestions: 0
   Questions:
   - Why you murdered your friends Family?
   - Why did you leave Jhon's left for dead?

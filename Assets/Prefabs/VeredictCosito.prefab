@@ -44,8 +44,9 @@ GameObject:
   - component: {fileID: 716997976001954321}
   - component: {fileID: 2874404682893807857}
   - component: {fileID: 978198716}
+  - component: {fileID: 6885415901817580660}
   m_Layer: 0
-  m_Name: martillo_y_podio_completo_4
+  m_Name: NotGuilty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,6 +143,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.98, y: 1.42}
   m_EdgeRadius: 0
+--- !u!114 &6885415901817580660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070840711167632732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26de0c2d74fedc648a9c842e59cd9d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veredictType: 0
 --- !u!1 &7184590057759263034
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,8 +167,9 @@ GameObject:
   - component: {fileID: 3579951107420834060}
   - component: {fileID: 5958342618631964926}
   - component: {fileID: 358710270}
+  - component: {fileID: 6552013054954676546}
   m_Layer: 0
-  m_Name: martillo_y_podio_completo_3
+  m_Name: Guilty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,6 +266,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.98, y: 1.42}
   m_EdgeRadius: 0
+--- !u!114 &6552013054954676546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7184590057759263034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26de0c2d74fedc648a9c842e59cd9d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veredictType: 1
 --- !u!1 &7842957518021916711
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +290,7 @@ GameObject:
   - component: {fileID: 5857095418848532310}
   - component: {fileID: 166625115832304902}
   - component: {fileID: 954090309}
+  - component: {fileID: 954090310}
   m_Layer: 0
   m_Name: Mazo
   m_TagString: Untagged
@@ -360,3 +389,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.64, y: 2.62}
   m_EdgeRadius: 0
+--- !u!114 &954090310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7842957518021916711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a896368f478fc3d4589413985fe21adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDrag: 0
+  initPos: {x: 0, y: 0, z: 0}
