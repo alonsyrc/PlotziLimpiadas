@@ -25,7 +25,7 @@ MonoBehaviour:
     cable."
   DialogoOfFijo: Is this trial thing going to take a while?
   indexPregunta: 0
-  sumQuestions: 0
+  sumQuestions: 2
   Questions:
   - What were you doing on 5 April between 3:30 and 5:00 PM?
   - What do you do for a living?
@@ -35,7 +35,7 @@ MonoBehaviour:
   - "I was walking in my truck in the downtown area of \u200B\u200Bthe city"
   - I am a computer technician
   - I'm moving
-  spritePersonaje: {fileID: 2746360979104835318, guid: 0726ef8752802e543801d4a1ec0d216c,
+  spritePersonaje: {fileID: 8712958494720329500, guid: 0726ef8752802e543801d4a1ec0d216c,
     type: 3}
   pixelatedAmountInicial: 20
   pixelatedAmount: 512

@@ -21,8 +21,8 @@ MonoBehaviour:
   BriefOfFacts: The suspect gave a salp to a woman on a Wheelchair because an argue
     over a guy named fernando
   DialogoOfFijo: Is this real?
-  indexPregunta: 0
-  sumQuestions: 0
+  indexPregunta: 2
+  sumQuestions: 2
   Questions:
   - Who is this fernando guy?
   - Did you have a problem with Maria?
@@ -31,7 +31,7 @@ MonoBehaviour:
   - Fernando is the guy that i love
   - Yes, she is a gold digger, she wants my fernando
   - No, I don't like that hoe but i have dignity
-  spritePersonaje: {fileID: -5094766675453775376, guid: 0726ef8752802e543801d4a1ec0d216c,
+  spritePersonaje: {fileID: 2746360979104835318, guid: 0726ef8752802e543801d4a1ec0d216c,
     type: 3}
   pixelatedAmountInicial: 20
   pixelatedAmount: 512
