@@ -25,26 +25,16 @@ MonoBehaviour:
     cable."
   DialogoOfFijo: Is this trial thing going to take a while?
   indexPregunta: 0
+  sumQuestions: 0
   Questions:
   - What were you doing on 5 April between 3:30 and 5:00 PM?
   - What do you do for a living?
   - Why when you were arrested, your truck was loaded with televisions, appliances
     and household items?
-  - Where you live now and where you are moving?
-  - So what were you doing in the downtown area ...
-  - On your criminal record says that you have been arrested for house robbery
-  - Any clue on your fingerprints printed on thar internet cable?
-  - How many years have you been clean?
   Answers:
   - "I was walking in my truck in the downtown area of \u200B\u200Bthe city"
   - I am a computer technician
   - I'm moving
-  - I live on the east side and I move a few streets ahead
-  - I was going to see my mom
-  - Yes your honor a few years ago, I has hooked on drugs but now I am a new man
-    with god
-  - I instaled internet on that house
-  - 2 Weeks...
   spritePersonaje: {fileID: 2746360979104835318, guid: 0726ef8752802e543801d4a1ec0d216c,
     type: 3}
   pixelatedAmountInicial: 20

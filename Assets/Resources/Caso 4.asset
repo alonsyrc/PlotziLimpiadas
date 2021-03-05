@@ -22,18 +22,15 @@ MonoBehaviour:
     over a guy named fernando
   DialogoOfFijo: Is this real?
   indexPregunta: 0
+  sumQuestions: 6
   Questions:
   - Who is this fernando guy?
   - Did you have a problem with Maria?
   - Did you slapped maria because she kissed fernando?
-  - Have you ever been with a psychologist?
-  - Tell me about the fire in your house
   Answers:
   - Fernando is the guy that i love
   - Yes, she is a gold digger, she wants my fernando
   - No, I don't like that hoe but i have dignity
-  - Yes, in my youth I was aggressive
-  - I set my house on fire because a spider
   spritePersonaje: {fileID: -5094766675453775376, guid: 0726ef8752802e543801d4a1ec0d216c,
     type: 3}
   pixelatedAmountInicial: 20
