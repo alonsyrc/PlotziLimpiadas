@@ -81,8 +81,10 @@ public class DialogosJuicio : ScriptableObject
     {
         yield return new WaitForSeconds(.1f);
         material.SetFloat("_PixelateSize", amount);
-        if(amount < 512)
+        if (amount < 512)
             DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
+        else
+            material.SetFloat("_PixelateSize", 9999);
     }
 
     public void SalidaCorte()
