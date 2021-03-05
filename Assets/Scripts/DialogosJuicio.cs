@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-[CreateAssetMenu(fileName ="PersonajeDialogos", menuName ="Dialogo")]
+[CreateAssetMenu(fileName = "PersonajeDialogos", menuName = "Dialogo")]
 public class DialogosJuicio : ScriptableObject
 {
-    public enum TrueVeredict { Guilty, Inocent};
+    public enum TrueVeredict { Guilty, Inocent };
     public TrueVeredict trueVeredict;
     public string NameOfVictim;
     public string NameOfSuspect;
@@ -47,14 +47,14 @@ public class DialogosJuicio : ScriptableObject
         return "Anything to say?";
     }
 
-    public void LlegadaCorte( )
+    public void LlegadaCorte()
     {
         sumQuestions = 0;
         AnimarLlegada();
         Transcript.instance.NewTranscriptLine(DialogoJuez());
         Transcript.instance.NewTranscriptLine(PrimerDialogo());
 
-        if(reportUIFiller == null)
+        if (reportUIFiller == null)
             reportUIFiller = FindObjectOfType<ReportUIFiller>();
         reportUIFiller.ShowBrief(this);
 
@@ -65,20 +65,21 @@ public class DialogosJuicio : ScriptableObject
 
     public void AnimarLlegada()
     {
-       if(spriteRenderer == null)
-          spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
-       spriteRenderer.sprite = spritePersonaje;
-       if(material == null)
-          material = spriteRenderer.material;
+        if (spriteRenderer == null)
+            spriteRenderer = GameObject.FindGameObjectWithTag("SpritePersonaje").GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = spritePersonaje;
+        if (material == null)
+            material = spriteRenderer.material;
 
-       DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x,512 , 2).OnComplete(()=> {
-           InspectSuspect.instance.ShowInspect();
-           InspectSuspect.instance.isOn = true ;
-       });   
-       DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
+        DOTween.To(() => pixelatedAmount, x => pixelatedAmount = x, 512, 2).OnComplete(() =>
+        {
+            InspectSuspect.instance.ShowInspect();
+            InspectSuspect.instance.isOn = true;
+        });
+        DialogosJuicio2.instance.StartCoroutine(CorrutineAjam(material, pixelatedAmount));
     }
 
-    IEnumerator CorrutineAjam (Material material, float amount)
+    IEnumerator CorrutineAjam(Material material, float amount)
     {
         yield return new WaitForSeconds(.1f);
         material.SetFloat("_PixelateSize", amount);
@@ -103,9 +104,10 @@ public class DialogosJuicio : ScriptableObject
         sumQuestions++;
         Transcript.instance.NewTranscriptLine(Questions[indexPregunta]);
         Transcript.instance.NewTranscriptLine(Answers[indexPregunta]);
-        if(sumQuestions<2){
+        if (sumQuestions < 2)
+        {
             InspectSuspect.instance.ShowInspect();
-            InspectSuspect.instance.isOn=true;
+            InspectSuspect.instance.isOn = true;
         }
         else
         {
@@ -116,6 +118,20 @@ public class DialogosJuicio : ScriptableObject
     public void SaltoDialogo(int id)
     {
         indexPregunta = id;
-        FindObjectOfType<QuestionSpawner>().SpawnQuestion(Questions[id],this);
+        FindObjectOfType<QuestionSpawner>().SpawnQuestion(Questions[id], this);
+    }
+
+    public void Periodico()
+    {
+        gameManager.StartCoroutine(CorrutinePeriodico());
+    }
+
+    IEnumerator CorrutinePeriodico()
+    {
+        gameManager.FadeIn();
+        yield return new WaitForSeconds(1f);
+        spriteRenderer.sprite = null;
+        reportUIFiller.CloseBrief();
+        gameManager.FadeOut();
     }
 }
