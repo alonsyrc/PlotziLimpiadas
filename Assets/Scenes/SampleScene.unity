@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 3892811803048138536, guid: 9eba4f0e2a4a16a48994c837dd4d806a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4449032801163984546, guid: 9eba4f0e2a4a16a48994c837dd4d806a,
         type: 3}
@@ -440,10 +440,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: AccesibilityCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4449032801163984558, guid: 9eba4f0e2a4a16a48994c837dd4d806a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8742480016455483553, guid: 9eba4f0e2a4a16a48994c837dd4d806a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eba4f0e2a4a16a48994c837dd4d806a, type: 3}
@@ -621,6 +626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 975716060115941262, guid: f17f03f61aee7e64baa04df0b85eed95,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 975716060115941298, guid: f17f03f61aee7e64baa04df0b85eed95,
         type: 3}

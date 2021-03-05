@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: dea629d69d177244abef91d14812b442
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5435298907817781017
+    second: mockup_escenario_personajes_0
+  - first:
+      213: -2043686287811418379
+    second: mockup_escenario_personajes_1
+  - first:
+      213: -226178950694553885
+    second: mockup_escenario_personajes_2
+  - first:
+      213: 3122437191788245813
+    second: mockup_escenario_personajes_3
+  - first:
+      213: 4317073256016895940
+    second: mockup_escenario_personajes_4
+  - first:
+      213: 2766122435645098014
+    second: mockup_escenario_personajes_5
+  - first:
+      213: -9028131652105464491
+    second: mockup_escenario_personajes_6
+  - first:
+      213: 6833188921649641912
+    second: mockup_escenario_personajes_7
+  - first:
+      213: 5745002580628551089
+    second: mockup_escenario_personajes_8
+  - first:
+      213: -6502917780584115067
+    second: mockup_escenario_personajes_9
+  - first:
+      213: -8247405142289349566
+    second: mockup_escenario_personajes_10
+  - first:
+      213: -1817157552046756522
+    second: mockup_escenario_personajes_11
+  - first:
+      213: -662508866824892540
+    second: mockup_escenario_personajes_3
+  - first:
+      213: 4844696769473104407
+    second: mockup_escenario_personajes_4
+  - first:
+      213: -5182850387415970680
+    second: mockup_escenario_personajes_5
+  - first:
+      213: -5925435491889244814
+    second: mockup_escenario_personajes_6
+  - first:
+      213: 6598250583731023085
+    second: mockup_escenario_personajes_7
+  - first:
+      213: -6006752975925017158
+    second: mockup_escenario_personajes_8
+  - first:
+      213: 2204829565193336885
+    second: mockup_escenario_personajes_9
+  - first:
+      213: -870400363707730156
+    second: mockup_escenario_personajes_10
+  - first:
+      213: 2932686643706509215
+    second: mockup_escenario_personajes_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2244
+        width: 68
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9172c882f8f0e6b40800000000000000
+      internalID: 5435298907817781017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2084
+        width: 117
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6e9ae262e53a3e0800000000000000
+      internalID: -2043686287811418379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1735
+        width: 99
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e63e2451737cdcf0800000000000000
+      internalID: -226178950694553885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1557
+        width: 109
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a4de42b02db3340800000000000000
+      internalID: 4844696769473104407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1162
+        width: 247
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c43165801d218b0800000000000000
+      internalID: -5182850387415970680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 611
+        width: 125
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275137e70df94cda0800000000000000
+      internalID: -5925435491889244814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 91
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec2d4662f1b19b50800000000000000
+      internalID: 6598250583731023085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 247
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab508785ef9b3aca0800000000000000
+      internalID: -6006752975925017158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538b0afcec0299e10800000000000000
+      internalID: 2204829565193336885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41774d41b77bbe3f0800000000000000
+      internalID: -870400363707730156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mockup_escenario_personajes_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 90
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97b8a3e6fef2b820800000000000000
+      internalID: 2932686643706509215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
